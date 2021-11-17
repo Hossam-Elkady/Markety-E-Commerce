@@ -1,0 +1,16 @@
+<div class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let product of products">
+        <div class="prod mb-3">
+          <img [src]="product.image" routerLink="/details/{{product.id}}" class="image p-5" alt="product.title+' image'">
+          <h3>{{product.title}}</h3>
+          <p class="rate">rate: {{product.rating.rate}}</p>
+          <p class="price h4">{{product.price}} $</p>
+          <p>Get it as soon as Tomorrow, Nov 17
+            Fulfilled by Markety - FREE Shipping</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
